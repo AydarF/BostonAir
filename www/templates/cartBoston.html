@@ -1,0 +1,20 @@
+<ion-view title="Boston Air">
+  <ion-nav-buttons side="left">
+    <button class="button button-icon button-clear button-light ion-navicon" ng-click="openMenuLeft()"></button>
+  </ion-nav-buttons>
+    <ion-content overflow-scroll="true" padding="true" class="has-header backgrd">
+        <h1 class="tocenter animated fadeInDown">Checkout</h1>
+        <ion-list>
+            <ion-item class="item-thumbnail-left">
+                <img src="img/cart_boston.jpg">
+                <h2>Boston, USA</h2>
+                <p><span class="numberz"> 580 ml</span></p>
+            </ion-item>
+        </ion-list>
+        <div>
+            <p>Number of items: <span class="numberz"> {{ input.two }} </span></p>
+            <p ng-controller="TocalcBosCtrl">Subtotal: <span class="numberz"> $ {{ total() | number:0 }} </span></p>
+        </div>
+        <a class="button button-block tocenter animated fadeInUp" ui-sref="menu.BostOverview" style="text-decoration: none;">PURCHASE</a>
+    </ion-content>
+</ion-view>

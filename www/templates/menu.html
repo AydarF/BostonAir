@@ -1,0 +1,28 @@
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-stable">
+            <ion-nav-back-button></ion-nav-back-button> 
+            <ion-nav-buttons side="left">
+              <div menu-toggle="left">
+                <button class="button button-icon button-clear button-light ion-navicon">
+                </button>
+              </div>  
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="side-menu21"></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left">
+        <ion-header-bar class="bar-stable">
+            <div class="title">Menu</div>
+        </ion-header-bar>
+        <ion-content padding="false" class="side-menu-left has-header backgrd">
+            <ion-list>
+                <ion-item  ui-sref="menu.home" menu-close=""><div class="zoomin gr">Home</div></ion-item>
+                <ion-item ui-sref="menu.about" menu-close=""><div class="zoomin gr">About</div></ion-item>
+                <ion-item ui-sref="menu.media" menu-close=""><div class="zoomin gr">Media</div></ion-item>
+                <ion-item ui-sref="menu.shop" menu-close=""><div class="zoomin gr">Shop</div></ion-item>
+                <ion-item ui-sref="menu.contactUs" menu-close=""><div class="zoomin gr">Contact Us</div></ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

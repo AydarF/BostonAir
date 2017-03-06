@@ -1,0 +1,38 @@
+<ion-view title="Cambridge Air">  <!-- title="{{pageTitle}}"" -->
+  <ion-nav-buttons side="left">
+    <button class="button button-icon button-clear button-light ion-navicon" ng-click="openMenuLeft()"></button>
+  </ion-nav-buttons>
+    <ion-content overflow-scroll="true" padding="true" class="has-header backgrd">
+     <h1 class="tocenter animated fadeInDown">Summary</h1><br />
+     <div class="animated fadeInUp animatedOverview">
+         <p class="tocenter" style="font-size: 1.4em;">Congratulations, you filthy bastard, you bought ya friggin Boston air!</p>
+    </div>
+    <!--    <ion-list>
+            <ion-item class="item-thumbnail-left">
+                <img src="img/cart_cambridge.jpg">
+                <p>Cambridge, USA</p>
+                <p><span class="numberz"> 580 ml</span></p>
+            </ion-item>
+        </ion-list>
+        <div>
+            <p>Number of items: <span class="numberz"> {{ input.one }} </span></p>
+            <p ng-controller="TocalcCtrl">SUBTOTAL: <span class="numberz"> $ {{ total() | number:0 }} </span></p>
+        </div>
+        <button class="button button-block tocenter animated fadeInUp" ng-click="showPopup()">PURCHASE</button>
+        
+        <div class="holdcarts"></div> -->
+
+    <div class="holdover"></div>  
+    <div class="bottom animated fadeIn">
+          <p class="social">
+              <a ui-sref="menu.contactUs" style="text-decoration: none;"><i>Contact us</i></a>  
+              <a href="http://twitter.com/" target="_blank"><i class="icon ion-social-twitter"></i></a>
+              <a href="http://www.facebook.com/" target="_blank"><i class="icon ion-social-facebook"></i></a>
+              <a href="http://instagram.com/" target="_blank"><i class="icon ion-social-instagram-outline"></i></a>
+              <a href="http://plus.google.com/" target="_blank"><i class="icon ion-social-google-outline"></i></a>
+          </p>
+          <p class="love">2016 Boston Air. Made with <i class="icon ion-heart"></i> by Aydar Fayzullin</p>                    
+    </div>
+        
+    </ion-content>
+</ion-view>

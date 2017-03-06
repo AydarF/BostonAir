@@ -1,0 +1,41 @@
+<ion-view title="Boston Air">
+  <ion-nav-buttons side="left">
+    <button class="button button-icon button-clear button-light ion-navicon" ng-click="openMenuLeft()"></button>
+  </ion-nav-buttons>
+    <ion-content overflow-scroll="true" padding="true" class="has-header backgrd">
+        <h1 class="tocenter animated fadeInDown"></h1>
+        <div>
+            
+            <img class="productpic" src="img/boston2.png" />
+            
+        </div>
+        <form class="list"></form>
+        <div>
+            <p>Collection Location: Boston, USA</p>
+        </div>
+        <div>
+            <p>Quantity: <span class="numberz">580 ml</span></p>
+        </div>
+        <div>
+            <p>Price per item: <span class="numberz">$25</span></p>
+        </div>
+        <div style="padding-bottom: 2%;" ng-controller="TocalcBosCtrl">
+        <form class="list" name="priceForm">
+            <ul>
+
+              <li>Number of items:</li><br />
+                <label class="item item-input">
+                  <input type="number" name="two" ng-model="input.two" min="1" max="100" ng-maxlength="3" placeholder="Type in the number of items you'd like to purchase" ng-required="true" ng-pattern="/^(100|[1-9][0-9]|[1-9])$/" >  
+                </label><br />
+                  <span class="errormsg" ng-show="priceForm.two.$touched && priceForm.two.$invalid">Valid number is required.</span>
+                  <span class="errormsg" ng-show="priceForm.two.$error.max">Oops! We cannot sell more than 100 items per     customer. Sorry for the inconvenience!</span>
+                  <span class="errormsg" ng-show="priceForm.two.$error.min">Whoa! You need to put a valid number of items. Sorry for the inconvenience!</span><br />
+              <li>Total Price: <span class="numberz">${{total() | number:0}}</span></li> 
+            </ul><br />
+            <div class="button-bar animated fadeIn">
+                <button ui-sref="menu.cartBoston" class="button" type="submit" value="Submit" ng-disabled="priceForm.$invalid">PROCEDE TO CHECKOUT</button>
+              </div>   
+        </form>
+    </div>
+    </ion-content>
+</ion-view>

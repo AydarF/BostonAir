@@ -1,0 +1,74 @@
+<ion-view title="Boston Air" class="cover" cache-view="false">
+  <ion-nav-buttons side="left">
+    <button class="button button-icon button-clear button-light ion-navicon" ng-click="openMenuLeft()"></button>
+  </ion-nav-buttons>
+    <ion-content overflow-scroll="true" padding="true" class="has-header backgrd" ng-controller="contactUsCtrl">
+        <br>
+        <div class="animated fadeInUp">
+            <p class="tocenter"><strong>Wanna get in touch? Drop us a line!</strong></p>
+        </div>
+        <br>
+        <form name="contactform" ng-submit="submitForm(contactform.$valid)"  novalidate> 
+
+              <div class="animated fadeInLeft">
+                  <p> Yo Full Name</p>
+              </div>
+              <label for="full_name" class="item item-input">
+                  <input type="text" name="full_name" ng-model="full_name" ng-minlength="2" ng-maxlength="55" placeholder="What's your mom call you?" ng-pattern="nameFormat" required />
+              </label>
+                <div ng-show="contactform.full_name.$touched && contactform.full_name.$invalid">
+                  <span class="errormsg" ng-show="contactform.full_name.$invalid && !userForm.name.$prisitne">Yo username is required!</span>
+                  <span class="errormsg" ng-show="contactform.full_name.$error.minlength">Yo username is too short.</span>
+                  <span class="errormsg" ng-show="contactform.full_name.$error.maxlength">Yo username is too long.</span>
+                  <span class="errormsg" ng-show="contactform.full_name.$error.pattern">Yo username doesn't respect the pattern.</span>
+                </div><br />
+       
+              <div class="animated fadeInLeft">
+                  <p>Yo Email</p>
+              </div>
+              <label for="email" class="item item-input">
+                  <input type="email" name="email" ng-model="email" placeholder="Where can we email you back?" ng-pattern="emailFormat" required />
+              </label>
+                <div class="custom-error" ng-show="contactform.email.$touched && contactform.email.$invalid">
+                  <span class="errormsg" ng-show="contactform.email.$invalid && !userForm.name.$pristine" >Yo email is required!</span>
+                  <span class="errormsg" ng-show="contactform.email.$error.email">Please, write yo valid email address.</span>
+                  <span class="errormsg" ng-show="contactform.full_name.$error.pattern">Yo username doesn't respect the pattern.</span>
+                </div></br />  
+        
+        
+              <div class="animated fadeInLeft">
+                  <p>Yo Message</p>
+              </div>
+              <label for="message" class="item item-input">
+                  <textarea type="text" name="message" ng-model="message" ng-minlength="2" ng-maxlength="1000" placeholder="What's on your mind?" required></textarea>
+              </label>
+                <div class="custom-error" ng-show="contactform.message.$touched && contactform.message.$invalid">  
+                  <span class="errormsg" ng-show="contactform.message.$invalid && !userForm.name.$pristine" >Yo message is required!</span>
+                  <span class="errormsg" ng-show="contactform.message.$error.minlength">Yo message is too short.</span>
+                  <span class="errormsg" ng-show="contactform.message.$error.maxlength">Yo message is too long.</span>
+                </div><br />                    
+        
+                   
+              <div class="button-bar animated fadeInUp">
+                <button class="button" type="submit" value="Submit" ng-disabled="contactform.$invalid">Send it!</button>
+              </div>
+
+        </form><br />
+       
+       <div>
+        <p class="contactusmsg">{{ msg }}</p>
+       </div>
+        
+        <div class="holdct"></div>
+        <div class="bottom animated fadeIn">
+          <p class="social">  
+              <a href="http://twitter.com/" target="_blank"><i class="icon ion-social-twitter-outline"></i></a>
+              <a href="http://www.facebook.com/" target="_blank"><i class="icon ion-social-facebook-outline"></i></a>
+              <a href="http://instagram.com/" target="_blank"><i class="icon ion-social-instagram-outline"></i></a>
+              <a href="http://plus.google.com/" target="_blank"><i class="icon ion-social-google-outline"></i></a>
+          </p>
+          <p class="love">2016 Boston Air. Made with <i class="icon ion-ios-heart-outline"></i> by <a class="creator" href="https://github.com/AydarF" target="_blank">Aydar Fayzullin</a></p>                    
+        </div> 
+    </ion-content>
+    
+</ion-view>

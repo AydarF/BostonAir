@@ -1,0 +1,35 @@
+ <ion-view title="Boston Air | Media" class="cover">
+    <ion-content overflow-scroll="true" padding="true" class="has-header backgrd" ng-controller="mediaCtrl">
+    <div class="container"> 
+          <h1 class=" tocenter animated slideInDown">Witness boston air with your own eyes:</h1>
+          <br>
+        <div class="animated fadeIn">
+          <div class="item item-divider divide">
+              <i class="ion-images"></i>
+              Images
+          </div>
+          <a class="item item-list-detail divide divide-b">
+              <ion-scroll direction="x">
+                  <img ng-repeat="image in allImages" ng-src="{{image.src}}" ng-click="showImages($index)" class="image-list-thumb"/>
+              </ion-scroll>
+          </a>
+        </div>
+        <br><br>
+        <div class="button-bar animated slideInUp">
+          <button class="button tocenter" ng-click="playVideo()">Play a video</button>
+        </div><br><br>
+      </div>
+          <div class="hold"></div>
+          <div class="dno animated fadeIn">
+            <p class="social">
+              <a ui-sref="menu.contactUs" style="text-decoration: none;"><i>Contact us</i></a>  
+              <a href="http://twitter.com/" target="_blank"><i class="icon ion-social-twitter"></i></a>
+              <a href="http://www.facebook.com/" target="_blank"><i class="icon ion-social-facebook"></i></a>
+              <a href="http://instagram.com/" target="_blank"><i class="icon ion-social-instagram-outline"></i></a>
+              <a href="http://plus.google.com/" target="_blank"><i class="icon ion-social-google-outline"></i></a>
+              <a href="mailto:someone@example.com?Subject=Wazzap%20y'all"><i class="icon ion-ios-email-outline"></i></a>
+          </p>
+          <p class="love">2016 Boston Air. Made with <i class="icon ion-heart"></i> by Aydar Fayzullin</p>          
+          </div>
+    </ion-content>
+</ion-view>

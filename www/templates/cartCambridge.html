@@ -1,0 +1,24 @@
+<ion-view title="Cambridge Air"> 
+  <ion-nav-buttons side="left">
+    <button class="button button-icon button-clear button-light ion-navicon" ng-click="openMenuLeft()"></button>
+  </ion-nav-buttons>
+    <ion-content overflow-scroll="true" padding="true" class="has-header backgrd">
+        <h1 class="tocenter animated fadeInDown">Checkout</h1>
+        <ion-list>
+            <ion-item class="item-thumbnail-left">
+                <img src="img/cart_cambridge.jpg">
+                <p>Cambridge, USA</p>
+                <p><span class="numberz"> 580 ml</span></p>
+            </ion-item>
+        </ion-list>
+        <div>
+            <p>Number of items: <span class="numberz"> {{ input.one }} </span></p>
+            <p ng-controller="TocalcCtrl">Subtotal: <span class="numberz"> $ {{ total() | number:0 }} </span></p>
+        </div>
+    
+        <a class="button button-block tocenter animated fadeInUp" ui-sref="menu.CambrOverview" style="text-decoration: none;">PURCHASE</a>
+        
+        <div class="holdcarts"></div>
+        
+    </ion-content>
+</ion-view>
