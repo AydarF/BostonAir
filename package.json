@@ -2,7 +2,12 @@
   "name": "bostonair",
   "version": "1.1.1",
   "description": "BostonAir: An Ionic project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
+    "express": "^4.15.2",
     "granim": "^1.0.6",
     "gulp": "^3.5.6",
     "gulp-concat": "^2.2.0",
