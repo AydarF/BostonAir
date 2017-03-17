@@ -80,13 +80,13 @@ angular.module('app.controllers', [])
 
 .controller('TocalcCtrl', function($scope) {
     $scope.total = function(){
-        return $scope.input.one * 25;
+        return $scope.input.one * 14.99;
     };
 })
 
 .controller('TocalcBosCtrl', function($scope) {
     $scope.total = function(){
-        return $scope.input.two * 25;
+        return $scope.input.two * 14.99;
     };
 })
    
@@ -115,7 +115,7 @@ angular.module('app.controllers', [])
     'src' : 'img/harvardsq_media.jpg'
   }];
 
-  $scope.clipSrc = 'https://youtu.be/wqqQirZz8Ys';
+  $scope.clipSrc = 'img/boston-air.mp4';
  
   $scope.showImages = function(index) {
     $scope.activeSlide = index;

@@ -5,16 +5,16 @@
     <ion-content overflow-scroll="true" padding="true" class="has-header backgrd" ng-controller="contactUsCtrl">
         <br>
         <div class="animated fadeInUp">
-            <p class="tocenter"><strong>Wanna get in touch? Drop us a line!</strong></p>
+            <p class="tocenter"><strong>Do you want to get in touch? Drop us a line!</strong></p>
         </div>
         <br>
         <form name="contactform" ng-submit="submitForm(contactform.$valid)"  novalidate> 
 
               <div class="animated fadeInLeft">
-                  <p> Yo Full Name</p>
+                  <p> Your Full Name</p>
               </div>
               <label for="full_name" class="item item-input">
-                  <input type="text" name="full_name" ng-model="full_name" ng-minlength="2" ng-maxlength="55" placeholder="What's your mom call you?" ng-pattern="nameFormat" required />
+                  <input type="text" name="full_name" ng-model="full_name" ng-minlength="2" ng-maxlength="55" placeholder="Your full name" ng-pattern="nameFormat" required />
               </label>
                 <div ng-show="contactform.full_name.$touched && contactform.full_name.$invalid">
                   <span class="errormsg" ng-show="contactform.full_name.$invalid && !userForm.name.$prisitne">Your username is required!</span>
