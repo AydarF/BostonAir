@@ -115,7 +115,7 @@ angular.module('app.controllers', [])
     'src' : 'img/harvardsq_media.jpg'
   }];
 
-  // $scope.clipSrc = 'img/boston-air.MP4';
+  $scope.clipSrc = 'https://youtu.be/wqqQirZz8Ys';
  
   $scope.showImages = function(index) {
     $scope.activeSlide = index;
@@ -141,16 +141,6 @@ angular.module('app.controllers', [])
   $scope.closeModal = function() {
     $scope.modal.hide();
     $scope.modal.remove()
-  }
-
-   $scope.slidePrevious = function() {
-    
-    $ionicSlideBoxDelegate.previous();
-  }
-  
-  $scope.slideNext = function() {
-    
-    $ionicSlideBoxDelegate.next();
   }
 
 })
