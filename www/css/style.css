@@ -99,7 +99,7 @@ body, html {
   position: absolute;
   text-align: center;
   font-size: 4em;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.2);
   color: white;
   padding: 80% 20px 0px;
   top: 0;
@@ -431,25 +431,6 @@ p.social a i{
 .creator:hover {
   opacity: 0.4;
 }
-
-/* Image modal buttons in Media section */
-.imgbtn {
-  position: relative;
-  border-radius: 2px;
-}
-.imgbtnleft {
-  top: 45%;
-  left: 15.3%;
-}
-.imgbtnright {
-  top: 45%;
-  left: 81%;
-}
-.imgbtnclose {
-  top: 3px;
-  left: 79%;
-}
-
 
 /* ======= Desktops and laptops ======= */
  @media only screen and (min-width : 1224px) { 
@@ -866,25 +847,6 @@ p.social a i{
   padding: 60px 0 15px;
 }
 
-/* Image modal buttons in Media section */
-.imgbtn {
-  z-index: 1000;
-  position: relative;
-  border-radius: 2px;
-}
-.imgbtnleft {
-  top: 45%;
-  left: 0.01%;
-}
-.imgbtnright {
-  top: 45%;
-  left: 84%;
-}
-.imgbtnclose {
-  top: 21.25% !important;
-  left: 73.7%;
-}
-
 }
 /* ======= (Nokia Lumia landscape) ======= */ 
 @media only screen and (min-device-width : 320px) and (max-device-width : 533px) and (orientation: landscape) {
@@ -913,25 +875,6 @@ p.social a i{
 .dnishe {
   text-align: center;
   padding: 60px 0 15px;
-}
-
-/* Image modal buttons in Media section */
-.imgbtn {
-  z-index: 1000;
-  position: relative;
-  border-radius: 2px;
-}
-.imgbtnleft {
-  top: 45%;
-  left: 2%;
-}
-.imgbtnright {
-  top: 45%;
-  left: 79%;
-}
-.imgbtnclose {
-  top: 0.1%;
-  left: 77%;
 }
 
 }
@@ -1103,9 +1046,9 @@ p.social a i{
   position: absolute;
   text-align: center;
   font-size: 3em;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.2);
   color: white;
-  padding: 80% 20px 0px !important;
+  padding: 75% 20px 0px !important;
   top: 0;
   bottom: 0;
   left: 0;
@@ -1126,25 +1069,6 @@ p.social a i{
   padding: 60px 0 15px;
 }
 
-/* Image modal buttons in Media section */
-.imgbtn {
-  z-index: 1000;
-  position: relative;
-  border-radius: 2px;
-}
-.imgbtnleft {
-  top: 45%;
-  left: 0.01%;
-}
-.imgbtnright {
-  top: 45%;
-  left: 84%;
-}
-.imgbtnclose {
-  top: 22.7%;
-  left: 73.7%;
-}
-
 }
 
 /* ======= (iPhone 5 landscape) ======= */ 
@@ -1155,7 +1079,7 @@ p.social a i{
   text-align: center;
   font-size: 4em !important;
   line-height: normal;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.2);
   color: white;
   padding: 20% 20px 0px !important;
   top: 0;
@@ -1179,25 +1103,6 @@ p.social a i{
   padding: 60px 0 15px;
 }
 
-/* Image modal buttons in Media section */
-.imgbtn {
-  z-index: 1000;
-  position: relative;
-  border-radius: 2px;
-}
-.imgbtnleft {
-  top: 45%;
-  left: 4%;
-}
-.imgbtnright {
-  top: 45%;
-  left: 77%;
-}
-.imgbtnclose {
-  top: 0.1%;
-  left: 77%;
-}
-
 }
 
 
@@ -1208,9 +1113,9 @@ p.social a i{
   position: absolute;
   text-align: center;
   font-size: 4em;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.2);
   color: white;
-  padding: 80% 20px 0 !important;
+  padding: 75% 20px 0 !important;
   top: 0;
   bottom: 0;
   left: 0;
@@ -1247,25 +1152,6 @@ p.social a i{
   padding: 60px 0 15px;
 }
 
-/* Image modal buttons in Media section */
-.imgbtn {
-  z-index: 1000;
-  position: relative;
-  border-radius: 2px;
-}
-.imgbtnleft {
-  top: 45%;
-  left: 0.01%;
-}
-.imgbtnright {
-  top: 45%;
-  left: 86.84%;
-}
-.imgbtnclose {
-  top: 24.4%;
-  left: 77.7%;
-}
-
 }
 
 
@@ -1276,9 +1162,9 @@ p.social a i{
   position: absolute;
   text-align: center;
   font-size: 6em;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.2);
   color: white;
-  padding: 25% 20px 0;
+  padding: 23% 20px 0;
   top: 0;
   bottom: 0;
   left: 0;
@@ -1295,25 +1181,6 @@ p.social a i{
   padding: 60px 0 15px;
 }
 
-/* Image modal buttons in Media section */
-.imgbtn {
-  z-index: 1000;
-  position: relative;
-  border-radius: 2px;
-}
-.imgbtnleft {
-  top: 45%;
-  left: 4.3%;
-}
-.imgbtnright {
-  top: 45%;
-  left: 81%;
-}
-.imgbtnclose {
-  top: 0.1%;
-  left: 81%;
-}
-
 }
 
 /* ======= (iPhone 6+ portrait) ======= */ 
@@ -1324,9 +1191,9 @@ p.social a i{
   text-align: center;
   line-height: 150%;
   font-size: 3em;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.2);
   color: white;
-  padding: 75% 20px 0 !important;
+  padding: 70% 20px 0 !important;
   top: 0;
   bottom: 0;
   left: 0;
@@ -1370,25 +1237,6 @@ p.social a i{
   color: #456;
 }
 
-/* Image modal buttons in Media section */
-.imgbtn {
-  z-index: 1000;
-  position: relative;
-  border-radius: 2px;
-}
-.imgbtnleft {
-  top: 45%;
-  left: 0.01%;
-}
-.imgbtnright {
-  top: 45%;
-  left: 88%;
-}
-.imgbtnclose {
-  top: 24.8%;
-  left: 80%;
-}
-
 }
 
 /* ======= ( iPhone 6+ landscape) ======= */ 
@@ -1398,9 +1246,9 @@ p.social a i{
   position: absolute;
   text-align: center;
   font-size: 4em;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.2);
   color: white;
-  padding: 25% 20px 0;
+  padding: 22% 20px 0;
   top: 0;
   bottom: 0;
   left: 0;
@@ -1426,25 +1274,6 @@ p.social a i{
   margin-right: 25%;
 } 
 
-/* Image modal buttons in Media section */
-.imgbtn {
-  z-index: 1000;
-  position: relative;
-  border-radius: 2px;
-}
-.imgbtnleft {
-  top: 45%;
-  left: 4.6%;
-}
-.imgbtnright {
-  top: 45%;
-  left: 88.5%;
-}
-.imgbtnclose {
-  top: 0.1%;
-  left: 85%;
-}
-
 }
 
 /* ======= (iPhone 6s portrait) ======= */ 
@@ -1458,9 +1287,9 @@ p.social a i{
   text-align: center;
   line-height: 150%;
   font-size: 6em !important;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.2);
   color: white;
-  padding: 75% 20px 0 !important;
+  padding: 70% 20px 0 !important;
   top: 0;
   bottom: 0;
   left: 0;
@@ -1508,25 +1337,6 @@ p.social a i{
   margin: 80% 0 0 0;
 }
 
-/* Image modal buttons in Media section */
-.imgbtn {
-  z-index: 1000;
-  position: relative;
-  border-radius: 2px;
-}
-.imgbtnleft {
-  top: 45%;
-  left: 0.01%;
-}
-.imgbtnright {
-  top: 45%;
-  left: 93.35%;
-}
-.imgbtnclose {
-  top: 27.8%;
-  left: 88.75%;
-}
-
 }
 
 /* ======= ( iPhone 6s landscape) ======= */ 
@@ -1536,7 +1346,7 @@ p.social a i{
   position: absolute;
   text-align: center;
   font-size: 6em !important;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.2);
   color: white;
   padding: 0px 20px 0;
   padding-top: 22.5%;
@@ -1562,25 +1372,6 @@ p.social a i{
 .fact {
   margin-left: 25%;
   margin-right: 25%;
-}
-
-/* Image modal buttons in Media section */
-.imgbtn {
-  z-index: 1000;
-  position: relative;
-  border-radius: 2px;
-}
-.imgbtnleft {
-  top: 45%;
-  left: 0.1%;
-}
-.imgbtnright {
-  top: 45%;
-  left: 96%;
-}
-.imgbtnclose {
-  top: 3.7%;
-  left: 79.7%;
 }
 
 }
