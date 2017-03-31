@@ -104,7 +104,7 @@ angular.module('app.controllers', [])
   }, {
     'src' : 'img/boston_media1.jpg'
   }, {
-    'src' : 'img/Boston-Common_media.jpg'
+    'src' : 'img/boston-common_media.jpg'
   }, {
     'src' : 'img/tufts.jpg'
   },  {
